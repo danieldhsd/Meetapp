@@ -14,7 +14,8 @@
     "express-async-errors": "^3.1.1",
     "mysql2": "^2.1.0",
     "sequelize": "^5.9.4",
-    "youch": "^2.0.10"
+    "youch": "^2.0.10",
+    "yup": "^0.28.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
