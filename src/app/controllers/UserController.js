@@ -23,6 +23,10 @@ class UserController {
       return res.status(400).json({ error: 'User already exists.' });
     }
 
+    if (req.body.password !== req.body.confirmPassword) {
+      return res.status(400).json({ error: 'Password does not match' });
+    }
+
     const { id, name, email } = await User.create(req.body);
 
     return res.json({
